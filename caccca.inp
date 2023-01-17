@@ -1,0 +1,26 @@
+$comment
+Calcium diradical on an acetylen bridge Ca-CC-Ca.
+
+Geometry: J. Phys. Chem. Lett. 2020, 11, 4, 1297--1304
+
+molecule: charge = +2, multiplicity = 1
+$end
+
+$molecule
+2 1
+Ca 0.0000000000 0.0000000000 -1.1942571725
+C  0.0000000000 0.0000000000  1.1148209748
+C  0.0000000000 0.0000000000  2.3634057834
+Ca 0.0000000000 0.0000000000  4.6730304143
+$end
+
+$rem
+  method = eom-ccsd
+  dea_singlets = [3, 3, 3, 3]
+  dea_triplets = [3, 3, 3, 3]
+  basis = 6-311G
+! state properties
+  cc_eom_prop = true
+! transition properties
+  cc_trans_prop = 2
+$end

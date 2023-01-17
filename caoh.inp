@@ -1,0 +1,32 @@
+$comment
+Calcium monohydoxide radical CaOH.
+
+Geometry: J. Phys. Chem. A 2002, 106, 41, 9595--9599
+
+molecule: charge = +1, multiplicity = 1
+$end
+
+$molecule
+1 1
+    Ca
+    O Ca rCaO
+    H O rOH Ca angle
+    
+    rCaO = 1.9778
+    rOH = 0.9520
+    angle = 180
+$end
+
+$rem
+  method = eom-ccsd
+  ea_states = [3, 3, 3, 3]
+  basis = 6-311G
+! state properties
+  cc_eom_prop = true
+  cc_eom_prop_te = true
+! transition properties
+  cc_trans_prop = 2
+! Dyson orbitals
+  cc_do_dyson = true
+  print_general_basis = true
+$end
