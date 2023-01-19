@@ -16,9 +16,10 @@ $end
 
 $rem
   method = eom-ccsd
-  dea_singlets = [3, 3, 3, 3]
-  dea_triplets = [3, 3, 3, 3]
+  dea_singlets = [1, 0, 1, 1]
+  dea_triplets = [1, 0, 1, 1]
   basis = 6-311G
+  eom_nguess_doubles = 5
 ! state properties
   cc_eom_prop = true
 ! transition properties
