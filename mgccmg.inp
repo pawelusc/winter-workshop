@@ -1,27 +1,25 @@
 $comment
-Calcium diradical on an acetylen bridge Ca-CC-Ca.
+Magnesium diradical on an acetylen bridge Mg-CC-Mg.
 
-Geometry: J. Phys. Chem. Lett. 2020, 11, 4, 1297--1304
+Geometry (similar to): J. Phys. Chem. Lett. 2020, 11, 4, 1297--1304
 
 molecule: charge = +2, multiplicity = 1
 $end
 
 $molecule
 2 1
-Ca 0.0000000000 0.0000000000 -1.1942571725
+Mg 0.0000000000 0.0000000000 -0.9942571725
 C  0.0000000000 0.0000000000  1.1148209748
 C  0.0000000000 0.0000000000  2.3634057834
-Ca 0.0000000000 0.0000000000  4.6730304143
+Mg 0.0000000000 0.0000000000  4.4730304143
 $end
 
 $rem
   method = eom-ccsd
   dea_singlets = [1, 0, 1, 1]
   dea_triplets = [1, 0, 1, 1]
-  basis = 6-311G
+  basis = 6-31G*
   eom_nguess_doubles = 5
-! state properties
-  cc_eom_prop = true
 ! transition properties
   cc_trans_prop = 2
 $end

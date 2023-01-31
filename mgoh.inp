@@ -1,0 +1,27 @@
+$comment
+Magnesium monohydoxide radical MgOH
+
+Geometry: J. Chem. Phys. 117, 1529 (2002); https://doi.org/10.1063/1.1485721 
+
+molecule: charge = +1, multiplicity = 1
+$end
+
+$molecule
+1 1
+    Mg
+    O Mg rMgO
+    H O rOH Mg angle
+    
+    rMgO = 1.763
+    rOH = 0.946
+    angle = 180
+$end
+
+$rem
+  method = eom-ccsd
+  ea_states = [1, 0, 1, 1]
+  basis = 6-31G*
+! Dyson orbitals
+  cc_do_dyson = true
+  print_general_basis = true
+$end
